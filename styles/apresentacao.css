@@ -1,0 +1,178 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSmall {
+    0% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes imageFadein {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bgGrow {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.head-container {
+    position: relative;
+    padding-top: 130px;
+    background: #D7DEE3;
+}
+
+/* modificador dos textos do painel a esquerda*/
+.head-contents {
+    display: grid;
+    margin-left: 15%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: minmax(520px, 1fr);
+    grid-gap: 20px;
+    background: #D7DEE3;
+}
+
+/* Measurement */
+.head-contents>* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.head-text-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column;
+    width: 100%;
+}
+
+.head-title {
+    display: inline-block;
+    font-size: 44px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    animation: fadeIn 2.5s;
+}
+
+.head-text {
+    display: inline-block;
+    font-size: 18px;
+    animation: fadeInSmall 2.5s normal forwards;
+}
+
+
+.profile-image {
+    width: clamp(500px, 100%, 100%);
+    object-fit: cover;
+    animation: fadeIn 3s;
+    aspect-ratio: 15/10;
+    opacity: 0;
+    animation: imageFadein 3s ease 0s normal forwards;
+}
+
+.head-gradient {
+    width: 100%;
+    background-color: #D7DEE3;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    height: 80px;
+}
+
+.head-gradient::after {
+    content: '';
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(234deg, #eff5f8, #d4dbe0);
+    animation: bgGrow 1.25s ease-in-out;
+}
+
+.head-subtitle {
+    font-size: 21px;
+    font-weight: 600;
+    opacity: 0.7;
+    animation: fadeInSmall 2.5s normal forwards;
+}
+
+
+@media only screen and (max-width:1280px) {
+    .profile-image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .head-contents {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 0 7%;
+
+    }
+
+    .head-contents > * {
+        display: flex;
+
+    }
+
+
+    .profile-image {
+        background-color: black;
+        width: 100vw;
+        order: 1;
+    }
+
+    .head-text-container{
+        order: 2;
+    }
+    
+    .head-title{
+        margin-top: 10px;
+        font-size: 26px;
+    }
+    .head-subtitle{
+        font-size: 16px;
+    }
+    .head-text{
+        font-size: 14px;
+    }
+
+}

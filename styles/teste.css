@@ -1,0 +1,103 @@
+
+
+.starcontainer {
+  position: absolute;
+  display: flex;
+  left: 115px;
+  top: 30px;
+}
+
+
+
+
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card {
+  position: relative;
+  width: clamp( 250px,325px, 325px );
+  height: 140px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.card:hover {
+  height: 450px;
+}
+
+.card .image-box {
+  position: absolute;
+  top: -50px;
+  left: 20%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.card:hover .image-box {
+  width: 150px;
+  height: 150px;
+}
+
+.card .image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.card .content .details {
+  position: absolute;
+  padding: 50px;
+  text-align: center;
+  width: 250px;
+  top: 0px;
+  left: 50px;
+  transition: 0.5s;
+}
+
+.card:hover .content .details {
+  transform: translateY(-10px);
+}
+
+.card .content .details h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2rem;
+}
+
+.card .content .details h2 span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.card .content .details .data {
+  transform: translate(-50px, 50px);
+}

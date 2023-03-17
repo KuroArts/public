@@ -1,0 +1,32 @@
+.reviews-container {
+    background: #D7DEE3;
+    min-height: 700px;
+    border-bottom: 2px solid white;
+    padding: 75px 0;
+}
+
+.reviews-contents {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    place-items: center;
+    
+
+}
+
+.card-reviwers-containers{
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: center;
+ align-items: center;
+ gap: 30px;
+
+}
+
+@media only screen and (max-width: 1280px){
+    .card-reviwers-containers{
+        flex-flow: row wrap;
+        margin-top: 100px;
+        gap: 90px;
+    }
+}
+

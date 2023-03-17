@@ -1,0 +1,170 @@
+.whatsapp_logo {
+    width: 200px;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    z-index: 999999999;
+}
+
+.premargin {
+    margin: 0 12%;
+}
+
+.nomargin {
+    width: 100%;
+}
+
+.preheader {
+    background: #D7DEE3;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    transition: all 50ms ease-in-out;
+}
+
+.preheadercontents {
+    width: 100%;
+    display: flex;
+        align-items: start;
+    padding: 0 100px;   
+}
+
+
+
+.prelogo {
+
+    height: 60px;
+}
+
+
+/* modificador dos textos do painel da imagem a direita*/
+
+
+
+.preintro {
+    background: white;
+
+    
+}
+
+.preintrocontents {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 90px 0;
+}
+
+.preintrotitle {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    align-items: center;
+}
+
+
+.preofficecontents {
+    display: flex;
+    flex-flow: column nowrap;
+        padding: 90px 0 100px 0;
+}
+
+.preofficepictures {
+    margin: 2vh 20%;
+}
+
+
+.gallery {
+    background: #EEE;
+}
+
+.gallery-cell {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-right: 10px;
+    background: #000000;
+    counter-increment: gallery-cell;
+    
+    
+}
+
+.gallery-image{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+
+.preprofilecontents {
+    height: 600px;
+    background-image: url(./assets/images/teste3.png);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.preprofilebox {
+    background-color: white;
+    width: 25%;
+    min-width: 330px;
+    transform: translateX(35%);
+    padding: 70px;
+    text-align: justify;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    
+}
+
+.preprofiletitle {
+   
+    text-indent: 2rem;
+    text-justify: inter-ideograph;
+
+}
+
+
+.prefooter {
+    background: #D7DEE3;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.pre_rodape{
+background-color: #D7DEE3;
+height: 30px;
+width: 100%;
+}
+
+
+@media only screen and (max-width:850px) {
+    .preprofilecontents{
+    
+        height: auto;
+        
+    }
+
+
+    .preprofilebox{
+        color: white;
+        background-color: transparent;
+        padding: 50px 0;
+        width: 100%;
+        margin: 0 50px;
+        transform: translateX(0);
+
+
+    }
+
+}

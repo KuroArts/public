@@ -1,0 +1,129 @@
+/* Global configuration */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+ a,
+ a:hover,
+ a:focus,
+ a:active {
+     text-decoration: none;
+     color: inherit;
+ }
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent ;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.7);
+        border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(112, 112, 112);
+}
+
+/* Header styles */
+
+.headerContents {
+    display: grid;
+    height: 90px;
+    background-color: #D7DEE3;
+    grid-template-columns: 190px 1fr 50px;
+    align-items: center;
+    padding: 0px 10vw;
+    gap: 30px;
+
+}
+
+.title { /* logo depois */
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.navbar {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.navlink {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+    font-size: 20px;
+}
+
+.navlink::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom left;
+    transition: 0.4s ease;
+    opacity: 0.5;
+}
+
+.navlink:hover {
+    opacity: 0.5;
+}
+
+.navlink:hover::after {
+    transform: scaleX(1);
+}
+
+/* Content styles */
+
+.textRows {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.imbuedText {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.imageHeadContents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #D7DEE3;
+    flex-flow: row nowrap;
+    padding: 0 160px;
+    align-items: center;
+}
+/*card style*/
+
+
+.precardcontents {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+/* Footer styles */

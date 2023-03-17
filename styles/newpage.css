@@ -1,0 +1,54 @@
+
+.fundo{
+
+    padding: 130px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0 30%;
+}
+
+.image_title{
+    width: 100%;
+   
+
+}
+
+.container-text{
+
+    width: 100%;
+    margin: 0 30px;
+}
+
+
+.title{
+    font-family: 'Quicksand',Arial;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.text-principal{
+    font-family: 'Quicksand',Arial;
+    opacity: 0.7;
+    font-size: 14px;
+    width: 100%;
+    font-weight: 200;
+    text-indent: 2rem;
+    text-justify: auto;   
+    
+}
+
+@media only screen and (max-width:800px) {
+    .fundo{
+
+        
+        margin: 0 5%;
+    }
+
+
+}
